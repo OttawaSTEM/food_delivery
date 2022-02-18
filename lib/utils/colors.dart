@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppColors{
   static final Color textColor = Colors.orange.shade50;
-  static final Color mainColor = Colors.lightBlue.shade100;
+  static final Color mainColor = Colors.lightBlue.shade300;
   static final Color iconColor1 = Colors.amber.shade300;
   static final Color iconColor2 = Colors.amber.shade700;
   static final Color paraColor = Colors.grey.shade600;

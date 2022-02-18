@@ -1,3 +1,7 @@
+# VSCode Flutter Extensions
+* Flutter
+* Awesome Flutter Snippets
+
 # food_delivery
 
 A new Flutter project.
