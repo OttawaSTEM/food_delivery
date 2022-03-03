@@ -5,20 +5,20 @@ class SmallText extends StatelessWidget {
   final String text;
   final double size;
   final double height;
-  // final TextOverflow overFlow;
+  final TextOverflow overFlow;
   const SmallText({Key? key, 
-    this.color = const Color(0xFF333333),   //! Has to be const, can't use Colors or AppColors
+    this.color = const Color(0x00000000),   //! Has to be const, can't use Colors or AppColors
     required this.text,
-    this.size = 12,
-    this.height = 1.2,
-    // this.overFlow = TextOverflow.ellipsis     //! Text overflow to ...
+    this.size = 16,
+    this.height = 1.5,
+    this.overFlow = TextOverflow.ellipsis     //! Text overflow to ...
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
-      // overflow: overFlow,
+      overflow: overFlow,
       style: TextStyle(
         fontFamily: 'Roboto',
         color: color,

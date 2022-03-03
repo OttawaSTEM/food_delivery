@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:food_delivery/home/food_page_body.dart';
 import 'package:food_delivery/utils/colors.dart';
 import 'package:food_delivery/widgets/big_text.dart';
 import 'package:food_delivery/widgets/small_text.dart';
@@ -27,12 +28,17 @@ class _MainFoodPageState extends State<MainFoodPage> {
                 Column(
                   children: [
                     BigText(
-                      text: 'Conutryyyy', 
+                      text: 'Canada', 
                       color: AppColors.mainColor
                     ),
-                    SmallText(
-                      text: 'City', 
-                      color: AppColors.mainColor
+                    Row(
+                      children: const [
+                        SmallText(
+                          text: 'Ottawa', 
+                          color: Colors.black
+                        ),
+                        Icon(Icons.arrow_drop_down_sharp)
+                      ],
                     )
                   ],
                 ),
@@ -49,6 +55,9 @@ class _MainFoodPageState extends State<MainFoodPage> {
                 ),
               ],
             ),
+          ),
+          FoodPageBody(
+            
           )
         ],
       ),
